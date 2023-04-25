@@ -20,7 +20,7 @@
     "__gen-typescript": "tree-sitter build-wasm node_modules/tree-sitter-typescript/typescript/",
     "__gen-typescript-jsx": "tree-sitter build-wasm node_modules/tree-sitter-typescript/tsx/",
     "__gen-zig": "tree-sitter build-wasm node_modules/tree-sitter-zig/",
-    "__mv-wasm": "mkdir wasm && mv *.wasm wasm/",
+    "__mv-wasm": "rm -rf ./wasm && mkdir wasm && mv *.wasm wasm/",
     "postinstall": "run-s gen-wasm"
   },
   "keywords": [],
