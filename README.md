@@ -2,7 +2,7 @@
 
 Wasm build package
 
-## REQUIREMENT
+## REQUIREMENTS
 You need docker, thats it
 
 ## HOW TO BUILD
