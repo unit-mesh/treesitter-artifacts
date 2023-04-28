@@ -7,5 +7,6 @@ You need docker, thats it
 
 ## HOW TO BUILD
 ```console
-pnpm install
+pnpm i
+pnpm build
 ```
