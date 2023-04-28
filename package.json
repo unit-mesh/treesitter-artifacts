@@ -10,7 +10,7 @@
     "./wasm": "./wasm"
   },
   "main": "./main/treesitter.js",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/unit-mesh/treesitter-artifacts"
@@ -43,7 +43,7 @@
     "__gen-zig": "tree-sitter build-wasm node_modules/tree-sitter-zig/",
     "__mv-wasm": "rm -rf ./wasm && mkdir wasm && mv *.wasm wasm/",
     "downlaod_treesitter": "node index.js",
-    "postinstall": "run-p gen-wasm downlaod_treesitter"
+    "build": "run-p gen-wasm downlaod_treesitter"
   },
   "devDependencies": {
     "@types/node": "^18.16.0",
