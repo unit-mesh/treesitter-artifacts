@@ -61,7 +61,7 @@
     "tree-sitter-python": "^0.20.2",
     "tree-sitter-rust": "^0.20.4",
     "tree-sitter-swift": "^0.3.6",
-    "tree-sitter-typescript": "^0.20.1",
+    "tree-sitter-typescript": "^0.20.2",
     "tree-sitter-zig": "^0.2.0"
   }
 }
