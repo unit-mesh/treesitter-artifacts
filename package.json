@@ -40,10 +40,10 @@
     "__gen-swift": "tree-sitter build-wasm node_modules/tree-sitter-swift/",
     "__gen-typescript": "tree-sitter build-wasm node_modules/tree-sitter-typescript/typescript/",
     "__gen-typescript-jsx": "tree-sitter build-wasm node_modules/tree-sitter-typescript/tsx/",
-    "__gen-zig": "tree-sitter build-wasm node_modules/tree-sitter-zig/",
+    "dep__gen-zig": "tree-sitter build-wasm node_modules/tree-sitter-zig/",
     "__mv-wasm": "rm -rf ./wasm && mkdir wasm && mv *.wasm wasm/",
-    "downlaod_treesitter": "node index.js",
-    "build": "run-p gen-wasm downlaod_treesitter"
+    "download_treesitter": "node index.js",
+    "build": "run-p gen-wasm download_treesitter"
   },
   "devDependencies": {
     "@types/node": "^18.16.0",
