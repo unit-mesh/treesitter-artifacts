@@ -10,7 +10,7 @@
     "./wasm/*": "./wasm/*"
   },
   "main": "./main/treesitter.js",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/unit-mesh/treesitter-artifacts"
@@ -40,7 +40,7 @@
     "__gen-swift": "tree-sitter build-wasm node_modules/tree-sitter-swift/",
     "__gen-typescript": "tree-sitter build-wasm node_modules/tree-sitter-typescript/typescript/",
     "__gen-typescript-jsx": "tree-sitter build-wasm node_modules/tree-sitter-typescript/tsx/",
-    "dep__gen-zig": "tree-sitter build-wasm node_modules/tree-sitter-zig/",
+    "__gen-zig": "tree-sitter build-wasm node_modules/tree-sitter-zig/",
     "__mv-wasm": "rm -rf ./wasm && mkdir wasm && mv *.wasm wasm/",
     "download_treesitter": "node index.js",
     "build": "run-p gen-wasm download_treesitter"
@@ -49,9 +49,10 @@
     "@types/node": "^18.16.0",
     "node-fetch": "^3.3.1",
     "npm-run-all": "^4.1.5",
+    "tree-sitter-cli": "0.21.0",
     "tree-sitter-c": "0.20.6",
-    "tree-sitter-c-sharp": "^0.20.0",
-    "tree-sitter-cpp": "git://github.com/tree-sitter/tree-sitter-cpp#5ead1e2",
+    "tree-sitter-c-sharp": "0.20.0",
+    "tree-sitter-cpp": "git://github.com/tree-sitter/tree-sitter-cpp#v0.20.5",
     "tree-sitter-go": "git://github.com/tree-sitter/tree-sitter-go#05900fa",
     "tree-sitter-java": "git://github.com/tree-sitter/tree-sitter-java#v0.20.0",
     "tree-sitter-javascript": "0.20.1",

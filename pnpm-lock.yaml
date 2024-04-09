@@ -14,11 +14,14 @@ devDependencies:
     specifier: 0.20.6
     version: 0.20.6
   tree-sitter-c-sharp:
-    specifier: ^0.20.0
+    specifier: 0.20.0
     version: 0.20.0
+  tree-sitter-cli:
+    specifier: 0.21.0
+    version: 0.21.0
   tree-sitter-cpp:
-    specifier: git://github.com/tree-sitter/tree-sitter-cpp#5ead1e2
-    version: github.com/tree-sitter/tree-sitter-cpp/5ead1e2
+    specifier: git://github.com/tree-sitter/tree-sitter-cpp#v0.20.5
+    version: github.com/tree-sitter/tree-sitter-cpp/3689086f0bbb020d94ab5b0a8ada81656f704811
   tree-sitter-go:
     specifier: git://github.com/tree-sitter/tree-sitter-go#05900fa
     version: github.com/tree-sitter/tree-sitter-go/05900fa
@@ -709,18 +712,24 @@ packages:
     resolution: {integrity: sha512-HOR6fQtghA7hp/LC6fQzzCyRv8TINh/hqYUULYHOYmwsCV73j4PHLYg1536qv/vff1KaRd7Qx3Fs3VLzx1/WIQ==}
     requiresBuild: true
     dependencies:
-      nan: 2.17.0
+      nan: 2.19.0
     dev: true
 
   /tree-sitter-c@0.20.6:
     resolution: {integrity: sha512-YosSBUOJ21j4mb7SmDmKI3QYQb7ANj55u2RTlj0XHQ6gFoLkpHzJDGvVK4zlbvqyPXA0u62LdhTwbLvYzHWcdw==}
     requiresBuild: true
     dependencies:
-      nan: 2.17.0
+      nan: 2.19.0
     dev: true
 
   /tree-sitter-cli@0.20.6:
     resolution: {integrity: sha512-tjbAeuGSMhco/EnsThjWkQbDIYMDmdkWsTPsa/NJAW7bjaki9P7oM9TkLxfdlnm4LXd1wR5wVSM2/RTLtZbm6A==}
+    hasBin: true
+    requiresBuild: true
+    dev: true
+
+  /tree-sitter-cli@0.21.0:
+    resolution: {integrity: sha512-wA7wT5724fNQW82XDH6zT6ZcYonjrAKLCHHuhLsPcAKULrhp3rNuMvlgBdB5FUBvmjHNhtTZF/qpHenMoRJPBw==}
     hasBin: true
     requiresBuild: true
     dev: true
@@ -842,10 +851,10 @@ packages:
       isexe: 2.0.0
     dev: true
 
-  github.com/tree-sitter/tree-sitter-cpp/5ead1e2:
-    resolution: {tarball: https://codeload.github.com/tree-sitter/tree-sitter-cpp/tar.gz/5ead1e2}
+  github.com/tree-sitter/tree-sitter-cpp/3689086f0bbb020d94ab5b0a8ada81656f704811:
+    resolution: {tarball: https://codeload.github.com/tree-sitter/tree-sitter-cpp/tar.gz/3689086f0bbb020d94ab5b0a8ada81656f704811}
     name: tree-sitter-cpp
-    version: 0.20.0
+    version: 0.20.5
     requiresBuild: true
     dependencies:
       nan: 2.19.0
