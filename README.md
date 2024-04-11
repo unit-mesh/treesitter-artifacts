@@ -1,6 +1,6 @@
-# treesitter-artifacts
+# TreeSitter Artifacts
 
-Wasm build package
+Wasm build package for [https://github.com/unit-mesh/auto-dev-vscode](https://github.com/unit-mesh/auto-dev-vscode)
 
 ## REQUIREMENTS
 
