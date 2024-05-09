@@ -1,3 +1,4 @@
 /node_modules
 .uuid
 .idea
+pnpm-lock.yaml
