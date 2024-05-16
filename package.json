@@ -42,6 +42,7 @@
     "__gen-typescript-jsx": "tree-sitter build-wasm node_modules/tree-sitter-typescript/tsx/",
     "__gen-zig": "tree-sitter build-wasm node_modules/tree-sitter-zig/",
     "__gen-toml": "tree-sitter build-wasm node_modules/tree-sitter-toml/",
+    "__gen-markdown": "tree-sitter build-wasm node_modules/@tree-sitter-grammars/tree-sitter-markdown/tree-sitter-markdown",
     "__mv-wasm": "rm -rf ./wasm && mkdir wasm && mv *.wasm wasm/",
     "download_treesitter": "node index.js",
     "build": "run-p gen-wasm download_treesitter"
@@ -64,6 +65,7 @@
     "tree-sitter-swift": "^0.3.6",
     "tree-sitter-typescript": "git://github.com/tree-sitter/tree-sitter-typescript#v0.20.4",
     "tree-sitter-zig": "^0.2.0",
-    "tree-sitter-toml": "0.5.1"
+    "tree-sitter-toml": "0.5.1",
+    "@tree-sitter-grammars/tree-sitter-markdown": "0.2.3"
   }
 }
