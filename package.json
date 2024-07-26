@@ -25,7 +25,6 @@
   ],
   "license": "MIT",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "gen-wasm": "tree-sitter --version && run-p __gen-* && run-s __mv-wasm",
     "__gen-c": "tree-sitter build-wasm node_modules/tree-sitter-c/",
     "__gen-cpp": "tree-sitter build-wasm node_modules/tree-sitter-cpp/",
