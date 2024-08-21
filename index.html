@@ -7,14 +7,10 @@
     <link rel="stylesheet"
           href="https://tree-sitter.github.io/tree-sitter/assets/css/style.css?v=5364ac4ea8579e219f208af7953e7376108997fe"
           media="screen" type="text/css">
-    <title>Tree-sitter｜Playground</title>
+    <title>AutoDev Tree-sitter｜Playground</title>
 </head>
 
-<body class="sidebar-hidden">
-<script>
-  document.body.classList.remove('sidebar-hidden')
-</script>
-
+<body>
 <main id="container">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/codemirror.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clusterize.js/0.18.0/clusterize.min.css">
@@ -25,23 +21,22 @@
 
         <h4>Code</h4>
         <select id="language-select">
-            <option value="bash">Bash</option>
             <option value="c">C</option>
             <option value="cpp">C++</option>
             <option value="c_sharp">C#</option>
             <option value="go">Go</option>
-            <option value="html">HTML</option>
             <option value="java">Java</option>
             <option value="javascript">JavaScript</option>
-            <option value="php">PHP</option>
+            <option value="kotlin">Kotlin</option>
+            <option value="markdown">Markdown</option>
+            <option value="lua">Lua</option>
             <option value="python">Python</option>
             <option value="ruby">Ruby</option>
-            <option value="rust">Rust</option>
+            <option value="swift">Swift</option>
             <option value="toml">TOML</option>
             <option value="typescript">TypeScript</option>
-            <option value="yaml">YAML</option>
-            <option value="swift">Swift</option>
-            <option value="cobol" selected="selected">Cobol</option>
+            <option value="tsx">TypeScript React</option>
+            <option value="zig">Zig</option>
         </select>
 
         <input id="logging-checkbox" type="checkbox" checked="checked"></input>
@@ -50,8 +45,7 @@
         <input id="query-checkbox" type="checkbox" checked="checked"></input>
         <label for="query-checkbox">Query</label>
 
-        <textarea id="code-input">
-</textarea>
+        <textarea id="code-input"></textarea>
 
         <div id="query-container" style="visibility: hidden; position: absolute;">
             <h4>Query</h4>
