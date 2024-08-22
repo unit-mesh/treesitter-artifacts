@@ -7,73 +7,66 @@
     <link rel="stylesheet"
           href="https://tree-sitter.github.io/tree-sitter/assets/css/style.css?v=5364ac4ea8579e219f208af7953e7376108997fe"
           media="screen" type="text/css">
-    <title>AutoDev Tree-sitter｜Playground</title>
-</head>
-
-<body>
-<main id="container">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/codemirror.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clusterize.js/0.18.0/clusterize.min.css">
 
-    <h1>Syntax Tree Playground</h1>
+    <title>AutoDev Tree-sitter｜Playground</title>
+</head>
 
-    <div id="playground-container" style="visibility: hidden;">
+<body id="container">
+<h1>AutoDev Syntax Tree Playground</h1>
 
-        <h4>Code</h4>
-        <select id="language-select">
-            <option value="c">C</option>
-            <option value="cpp">C++</option>
-            <option value="c_sharp">C#</option>
-            <option value="go">Go</option>
-            <option value="java">Java</option>
-            <option value="javascript">JavaScript</option>
-            <option value="kotlin">Kotlin</option>
-            <option value="markdown">Markdown</option>
-            <option value="lua">Lua</option>
-            <option value="python">Python</option>
-            <option value="ruby">Ruby</option>
-            <option value="swift">Swift</option>
-            <option value="toml">TOML</option>
-            <option value="typescript">TypeScript</option>
-            <option value="tsx">TypeScript React</option>
-            <option value="zig">Zig</option>
-        </select>
+<div id="playground-container">
+    <h4>Code</h4>
 
-        <input id="logging-checkbox" type="checkbox" checked="checked"></input>
-        <label for="logging-checkbox">Log</label>
+    <select id="language-select">
+        <option value="c">C</option>
+        <option value="cpp">C++</option>
+        <option value="c_sharp">C#</option>
+        <option value="go">Go</option>
+        <option value="java">Java</option>
+        <option value="javascript">JavaScript</option>
+        <option value="kotlin">Kotlin</option>
+        <option value="markdown">Markdown</option>
+        <option value="lua">Lua</option>
+        <option value="python">Python</option>
+        <option value="ruby">Ruby</option>
+        <option value="swift">Swift</option>
+        <option value="toml">TOML</option>
+        <option value="typescript">TypeScript</option>
+        <option value="tsx">TypeScript React</option>
+        <option value="zig">Zig</option>
+    </select>
 
-        <input id="query-checkbox" type="checkbox" checked="checked"></input>
-        <label for="query-checkbox">Query</label>
+    <input id="logging-checkbox" type="checkbox" checked="checked"></input>
+    <label for="logging-checkbox">Log</label>
 
-        <textarea id="code-input"></textarea>
+    <input id="query-checkbox" type="checkbox" checked="checked"></input>
+    <label for="query-checkbox">Query</label>
 
-        <div id="query-container" style="visibility: hidden; position: absolute;">
-            <h4>Query</h4>
-            <textarea id="query-input"></textarea>
-        </div>
+    <textarea id="code-input"></textarea>
 
-        <h4>Tree</h4>
-        <span id="update-time"></span>
-        <div id="output-container-scroll">
-            <pre id="output-container" class="highlight"></pre>
-        </div>
+    <div id="query-container" style="visibility: hidden; position: absolute;">
+        <h4>Query</h4>
+        <textarea id="query-input"></textarea>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/codemirror.min.js"></script>
+    <h4>Tree</h4>
+    <span id="update-time"></span>
+    <div id="output-container-scroll">
+        <pre id="output-container" class="highlight"></pre>
+    </div>
+</div>
 
-    <script>LANGUAGE_BASE_URL = 'wasm'</script>
-    <script src="https://tree-sitter.github.io/tree-sitter.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/codemirror.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clusterize.js/0.18.0/clusterize.min.js"></script>
-    <script src="https://tree-sitter.github.io/tree-sitter/assets/js/playground.js"></script>
-</main>
+<script>LANGUAGE_BASE_URL = 'wasm'</script>
+
+<script src="https://tree-sitter.github.io/tree-sitter.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clusterize.js/0.18.0/clusterize.min.js"></script>
+<script src="https://tree-sitter.github.io/tree-sitter/assets/js/playground.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous">
-</script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js">
-</script>
-
