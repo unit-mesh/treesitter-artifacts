@@ -2,3 +2,4 @@
 .uuid
 .idea
 ./*.wasm
+out/*.wasm
