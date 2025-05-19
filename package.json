@@ -1,15 +1,10 @@
 {
   "name": "@unit-mesh/treesitter-artifacts",
   "author": "Unit Mesh authors",
-  "type": "module",
-  "exports": {
-    ".": {
-      "import": "./main/treesitter.js",
-      "require": "./main/treesitter.js"
-    },
-    "./wasm/*": "./wasm/*"
-  },
-  "main": "./main/treesitter.js",
+  "files": [
+    "/out"
+  ],
+  "main": "bindings/node",
   "version": "1.6.4",
   "repository": {
     "type": "git",
@@ -25,33 +20,21 @@
   ],
   "license": "MIT",
   "scripts": {
-    "gen-wasm": "tree-sitter --version && run-p __gen-* && run-s __mv-wasm",
-    "__gen-c": "tree-sitter build-wasm node_modules/tree-sitter-c/",
-    "__gen-cpp": "tree-sitter build-wasm node_modules/tree-sitter-cpp/",
-    "__gen-c-sharp": "tree-sitter build-wasm node_modules/tree-sitter-c-sharp/",
-    "__gen-go": "tree-sitter build-wasm node_modules/tree-sitter-go/",
-    "__gen-java": "tree-sitter build-wasm node_modules/tree-sitter-java/",
-    "__gen-javascript": "tree-sitter build-wasm node_modules/tree-sitter-javascript/",
-    "__gen-kotlin": "tree-sitter build-wasm node_modules/tree-sitter-kotlin/",
-    "__gen-lua": "tree-sitter build-wasm node_modules/tree-sitter-lua/",
-    "__gen-python": "tree-sitter build-wasm node_modules/tree-sitter-python/",
-    "__gen-rust": "tree-sitter build-wasm node_modules/tree-sitter-rust/",
-    "__gen-swift": "tree-sitter build-wasm node_modules/tree-sitter-swift/",
-    "__gen-php": "tree-sitter build-wasm node_modules/tree-sitter-php/",
-    "__gen-typescript": "tree-sitter build-wasm node_modules/tree-sitter-typescript/typescript/",
-    "__gen-typescript-jsx": "tree-sitter build-wasm node_modules/tree-sitter-typescript/tsx/",
-    "__gen-zig": "tree-sitter build-wasm node_modules/tree-sitter-zig/",
-    "__gen-toml": "tree-sitter build-wasm node_modules/tree-sitter-toml/",
-    "__gen-markdown": "tree-sitter build-wasm node_modules/@tree-sitter-grammars/tree-sitter-markdown/tree-sitter-markdown",
-    "__mv-wasm": "rm -rf ./wasm && mkdir wasm && mv *.wasm wasm/",
-    "download_treesitter": "node index.js",
-    "build": "run-p gen-wasm download_treesitter"
+    "build": "ts-node build.ts"
   },
   "devDependencies": {
-    "@tree-sitter-grammars/tree-sitter-markdown": "0.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "5.3.3",
     "@types/node": "^18.16.0",
     "node-fetch": "^3.3.1",
     "npm-run-all": "^4.1.5",
+    "@supercharge/promise-pool": "^3.1.1",
+    "find-root": "^1.1.0"
+  },
+  "dependencies": {
+    "@tree-sitter-grammars/tree-sitter-markdown": "0.2.3",
+    "@tree-sitter-grammars/tree-sitter-zig": "1.0.0",
+    "@tlaplus/tree-sitter-tlaplus": "^1.2.4",
     "tree-sitter-c": "0.20.6",
     "tree-sitter-c-sharp": "0.20.0",
     "tree-sitter-cli": "^0.20.8",
@@ -66,6 +49,8 @@
     "tree-sitter-swift": "^0.3.6",
     "tree-sitter-toml": "0.5.1",
     "tree-sitter-php": "^0.22.0",
+    "tree-sitter-ocaml": "^0.20.4",
+    "tree-sitter-rescript": "github:rescript-lang/tree-sitter-rescript#6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a",
     "tree-sitter-bash": "^0.20.5",
     "tree-sitter-typescript": "git://github.com/tree-sitter/tree-sitter-typescript#v0.20.4",
     "tree-sitter-zig": "git://github.com/GrayJack/tree-sitter-zig#8e970cb"

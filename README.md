@@ -35,3 +35,9 @@ pnpm build
 pnpm i
 pnpm build
 ```
+
+## LISENSE
+
+Build script based on: [tree-sitter-wasms](https://github.com/Gregoor/tree-sitter-wasms) with MIT LICENSE.
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
