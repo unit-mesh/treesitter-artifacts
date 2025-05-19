@@ -53,6 +53,7 @@
     "tree-sitter-rescript": "github:rescript-lang/tree-sitter-rescript#6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a",
     "tree-sitter-bash": "^0.20.5",
     "tree-sitter-typescript": "git://github.com/tree-sitter/tree-sitter-typescript#v0.20.4",
-    "tree-sitter-zig": "git://github.com/GrayJack/tree-sitter-zig#8e970cb"
+    "tree-sitter-zig": "git://github.com/GrayJack/tree-sitter-zig#8e970cb",
+    "tree-sitter-cobol": "git://github.com/unit-mesh/tree-sitter-cobol#8ba6692"
   }
 }

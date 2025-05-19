@@ -29,6 +29,9 @@ importers:
       tree-sitter-cli:
         specifier: ^0.20.8
         version: 0.20.8
+      tree-sitter-cobol:
+        specifier: git://github.com/unit-mesh/tree-sitter-cobol#8ba6692
+        version: https://codeload.github.com/unit-mesh/tree-sitter-cobol/tar.gz/8ba6692
       tree-sitter-cpp:
         specifier: git://github.com/tree-sitter/tree-sitter-cpp#v0.20.5
         version: https://codeload.github.com/tree-sitter/tree-sitter-cpp/tar.gz/3689086f0bbb020d94ab5b0a8ada81656f704811
@@ -808,6 +811,10 @@ packages:
   tree-sitter-cli@0.20.8:
     resolution: {integrity: sha512-XjTcS3wdTy/2cc/ptMLc/WRyOLECRYcMTrSWyhZnj1oGSOWbHLTklgsgRICU3cPfb0vy+oZCC33M43u6R1HSCA==}
     hasBin: true
+
+  tree-sitter-cobol@https://codeload.github.com/unit-mesh/tree-sitter-cobol/tar.gz/8ba6692:
+    resolution: {tarball: https://codeload.github.com/unit-mesh/tree-sitter-cobol/tar.gz/8ba6692}
+    version: 0.0.1
 
   tree-sitter-cpp@https://codeload.github.com/tree-sitter/tree-sitter-cpp/tar.gz/3689086f0bbb020d94ab5b0a8ada81656f704811:
     resolution: {tarball: https://codeload.github.com/tree-sitter/tree-sitter-cpp/tar.gz/3689086f0bbb020d94ab5b0a8ada81656f704811}
@@ -1820,6 +1827,10 @@ snapshots:
   tree-sitter-cli@0.20.6: {}
 
   tree-sitter-cli@0.20.8: {}
+
+  tree-sitter-cobol@https://codeload.github.com/unit-mesh/tree-sitter-cobol/tar.gz/8ba6692:
+    dependencies:
+      nan: 2.22.2
 
   tree-sitter-cpp@https://codeload.github.com/tree-sitter/tree-sitter-cpp/tar.gz/3689086f0bbb020d94ab5b0a8ada81656f704811:
     dependencies:
