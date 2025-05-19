@@ -28,6 +28,7 @@ let tree;
   const queryContainer = document.getElementById('query-container');
   const queryInput = document.getElementById('query-input');
   const updateTimeSpan = document.getElementById('update-time');
+  const copyTreeBtn = document.getElementById('copy-tree-btn');
   const languagesByName = {};
 
   loadState();
@@ -76,11 +77,43 @@ let tree;
   queryCheckbox.addEventListener('change', handleQueryEnableChange);
   languageSelect.addEventListener('change', handleLanguageChange);
   outputContainer.addEventListener('click', handleTreeClick);
+  copyTreeBtn.addEventListener('click', handleCopyTree);
 
   handleQueryEnableChange();
   await handleLanguageChange()
 
   playgroundContainer.style.visibility = 'visible';
+
+  // Function to copy tree content to clipboard
+  function handleCopyTree() {
+    if (!treeRows || !treeRows.length) return;
+
+    // Process the HTML content to create plain text version of the tree
+    let plainText = treeRows.map(row => {
+      // Create a temporary div to parse the HTML
+      const div = document.createElement('div');
+      div.innerHTML = row;
+      // Extract text content and preserve indentation
+      return div.textContent;
+    }).join('\n');
+
+    // Copy to clipboard
+    navigator.clipboard.writeText(plainText).then(() => {
+      // Visual feedback for successful copy
+      const originalText = copyTreeBtn.textContent;
+      copyTreeBtn.textContent = 'Copied!';
+      copyTreeBtn.style.backgroundColor = '#8ce28c';
+
+      // Reset button after 1.5 seconds
+      setTimeout(() => {
+        copyTreeBtn.textContent = originalText;
+        copyTreeBtn.style.backgroundColor = '';
+      }, 1500);
+    }).catch(err => {
+      console.error('Failed to copy: ', err);
+      alert('Failed to copy tree content');
+    });
+  }
 
   async function handleLanguageChange() {
     const newLanguageName = languageSelect.value;

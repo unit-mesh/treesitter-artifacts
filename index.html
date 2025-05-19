@@ -9,6 +9,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clusterize.js/0.18.0/clusterize.min.css">
 
     <title>AutoDev Tree-sitter｜Playground</title>
+    <style>
+        .copy-btn {
+            margin-left: 10px;
+            padding: 2px 6px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            vertical-align: middle;
+        }
+        .copy-btn:hover {
+            background-color: #e0e0e0;
+        }
+        .panel-header {
+            display: flex;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body id="container">
@@ -53,7 +72,10 @@
             </div>
 
             <div class="panel-section">
-                <h4>Tree</h4>
+                <div class="panel-header">
+                    <h4>Tree</h4>
+                    <button id="copy-tree-btn" class="copy-btn" title="Copy tree to clipboard">Copy</button>
+                </div>
                 <span id="update-time"></span>
                 <div id="output-container-scroll">
                     <pre id="output-container" class="highlight"></pre>
