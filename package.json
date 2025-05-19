@@ -2,10 +2,10 @@
   "name": "@unit-mesh/treesitter-artifacts",
   "author": "Unit Mesh authors",
   "files": [
-    "/out"
+    "/wasm"
   ],
   "main": "bindings/node",
-  "version": "1.6.4",
+  "version": "1.7.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/unit-mesh/treesitter-artifacts"

@@ -3,3 +3,4 @@
 .idea
 ./*.wasm
 out/*.wasm
+wasm/*.wasm

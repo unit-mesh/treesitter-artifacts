@@ -13,7 +13,7 @@ const langArg = process.argv[2];
 
 const exec = util.promisify(require("child_process").exec);
 
-const outDir = path.join(__dirname, "out");
+const outDir = path.join(__dirname, "wasm");
 
 let hasErrors = false;
 
