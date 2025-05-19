@@ -17,7 +17,9 @@ onlyBuiltDependencies:
   - tree-sitter-ocaml
   - tree-sitter-php
   - tree-sitter-python
+  - tree-sitter-ruby
   - tree-sitter-rust
+  - tree-sitter-scala
   - tree-sitter-swift
   - tree-sitter-toml
   - tree-sitter-typescript
