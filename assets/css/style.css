@@ -942,6 +942,7 @@ a > span {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    height: calc(100vh - 200px); /* Set a height for the entire layout */
 }
 
 #left-panel {
@@ -949,16 +950,21 @@ a > span {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-height: 100%;
 }
 
 #right-panel {
     flex: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .panel-section {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    flex: 1;
 }
 
 .controls {
@@ -976,19 +982,6 @@ a > span {
     max-height: 350px
 }
 
-#playground-container h4, #playground-container select, #playground-container .field, #playground-container label {
-    display: inline-block;
-    margin-right: 20px
-}
-
-#playground-container #logging-checkbox {
-    height: 15px
-}
-
-#playground-container .CodeMirror div.CodeMirror-cursor {
-    border-left: 3px solid red
-}
-
 #output-container {
     padding: 0 10px;
     margin: 0
@@ -1004,21 +997,28 @@ a > span {
 }
 
 #query-container .CodeMirror {
-    height: auto;
-    max-height: 850px;
+    height: 100% !important;
+    max-height: none !important;
     border: 1px solid #aaa
 }
 
+#query-container .CodeMirror-scroll {
+    height: 100% !important;
+    max-height: none !important;
+}
+
 #query-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: relative;
     visibility: visible;
     height: 100%;
+    flex: 1;
 }
 
 #query-input {
     width: 100%;
-    min-height: 650px;
+    flex: 1;
 }
 
 a.highlighted {
@@ -1029,4 +1029,3 @@ a.highlighted {
 .query-error {
     text-decoration: underline red dashed
 }
-

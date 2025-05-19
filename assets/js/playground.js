@@ -45,6 +45,11 @@ let tree;
     showCursorWhenSelecting: true
   });
 
+  // Set the query editor to fill available height
+  setTimeout(() => {
+    queryEditor.refresh();
+  }, 100);
+
   const cluster = new Clusterize({
     rows: [],
     noDataText: null,
@@ -380,6 +385,11 @@ let tree;
     if (queryCheckbox.checked) {
       queryContainer.style.visibility = '';
       queryContainer.style.position = '';
+      setTimeout(() => {
+        queryEditor.refresh();
+        // Force CodeMirror to recalculate its dimensions
+        queryEditor.setSize(null, "100%");
+      }, 10);
     } else {
       queryContainer.style.visibility = 'hidden';
       queryContainer.style.position = 'absolute';
