@@ -23,4 +23,5 @@ onlyBuiltDependencies:
   - tree-sitter-swift
   - tree-sitter-toml
   - tree-sitter-typescript
+  - tree-sitter-vue
   - tree-sitter-zig

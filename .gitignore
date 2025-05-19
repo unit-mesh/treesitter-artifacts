@@ -1,6 +1,6 @@
 /node_modules
 .uuid
 .idea
-./*.wasm
+*.wasm
 out/*.wasm
 wasm/*.wasm

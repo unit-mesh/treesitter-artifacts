@@ -55,6 +55,7 @@
     "tree-sitter-bash": "^0.20.5",
     "tree-sitter-typescript": "git://github.com/tree-sitter/tree-sitter-typescript#v0.20.4",
     "tree-sitter-zig": "git://github.com/GrayJack/tree-sitter-zig#8e970cb",
-    "tree-sitter-cobol": "git://github.com/unit-mesh/tree-sitter-cobol#8ba6692"
+    "tree-sitter-cobol": "git://github.com/unit-mesh/tree-sitter-cobol#8ba6692",
+    "tree-sitter-vue": "https://github.com/tree-sitter-grammars/tree-sitter-vue#7e48557b903a9db9c38cea3b7839ef7e1f36c693"
   }
 }
