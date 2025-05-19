@@ -118,7 +118,16 @@ let tree;
   async function handleLanguageChange() {
     const newLanguageName = languageSelect.value;
     if (!languagesByName[newLanguageName]) {
-      const url = `${LANGUAGE_BASE_URL}/tree-sitter-${newLanguageName}.wasm`
+      let url;
+      // Check if running locally or online
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        // Use local path when running locally
+        url = `${LANGUAGE_BASE_URL}/tree-sitter-${newLanguageName}.wasm`
+      } else {
+        // Use CDN path when running online
+        url = `https://cdn.jsdelivr.net/npm/@unit-mesh/treesitter-artifacts@latest/wasm/tree-sitter-${newLanguageName}.wasm`
+      }
+
       languageSelect.disabled = true;
       try {
         languagesByName[newLanguageName] = await TreeSitter.Language.load(url);
