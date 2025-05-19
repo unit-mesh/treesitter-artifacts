@@ -63,8 +63,8 @@ importers:
         specifier: ^0.20.4
         version: 0.20.4
       tree-sitter-swift:
-        specifier: ^0.3.6
-        version: 0.3.6
+        specifier: ^0.4.0
+        version: 0.4.3
       tree-sitter-toml:
         specifier: 0.5.1
         version: 0.5.1
@@ -863,8 +863,8 @@ packages:
   tree-sitter-rust@0.20.4:
     resolution: {integrity: sha512-pgqPgw/vmx3LGjsfOXHJ+YrIx/Xg0NYVPbUWwlonoQMHD0Jxd1i/Fgq6N0ANOu9Wmb188MN9dVRLHPotF+IW5g==}
 
-  tree-sitter-swift@0.3.6:
-    resolution: {integrity: sha512-evvgjl0G2PPb2DqiNu9WBpenTQWcyxnSat2v964P1JwZp2dvHjJN5x50MuJvJtYp/SJTMxxv/3e+sQob13AwuQ==}
+  tree-sitter-swift@0.4.3:
+    resolution: {integrity: sha512-UYwtnhaZo0/VIykY/vJlaH5sj+EqLsHkeVSHUNMC+4McdtVpVyNqq96HB4Djvg9QyirwiwErFn9EXc2oyEo8Qw==}
 
   tree-sitter-toml@0.5.1:
     resolution: {integrity: sha512-ymaN/Lno2tqTPEuKOOdu4IoqISaL8MWRQGp1/+2yqVAcw9PSBh5diCkoOwumHYv00grzDmY5hUtuairQ68hVkQ==}
@@ -1872,7 +1872,7 @@ snapshots:
     dependencies:
       nan: 2.22.2
 
-  tree-sitter-swift@0.3.6:
+  tree-sitter-swift@0.4.3:
     dependencies:
       nan: 2.22.2
       tree-sitter-cli: 0.20.6
