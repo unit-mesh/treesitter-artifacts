@@ -37,6 +37,7 @@
     "__gen-python": "tree-sitter build-wasm node_modules/tree-sitter-python/",
     "__gen-rust": "tree-sitter build-wasm node_modules/tree-sitter-rust/",
     "__gen-swift": "tree-sitter build-wasm node_modules/tree-sitter-swift/",
+    "__gen-php": "tree-sitter build-wasm node_modules/tree-sitter-php/",
     "__gen-typescript": "tree-sitter build-wasm node_modules/tree-sitter-typescript/typescript/",
     "__gen-typescript-jsx": "tree-sitter build-wasm node_modules/tree-sitter-typescript/tsx/",
     "__gen-zig": "tree-sitter build-wasm node_modules/tree-sitter-zig/",
@@ -47,12 +48,13 @@
     "build": "run-p gen-wasm download_treesitter"
   },
   "devDependencies": {
+    "@tree-sitter-grammars/tree-sitter-markdown": "0.2.3",
     "@types/node": "^18.16.0",
     "node-fetch": "^3.3.1",
     "npm-run-all": "^4.1.5",
-    "tree-sitter-cli": "0.21.0",
     "tree-sitter-c": "0.20.6",
     "tree-sitter-c-sharp": "0.20.0",
+    "tree-sitter-cli": "^0.20.8",
     "tree-sitter-cpp": "git://github.com/tree-sitter/tree-sitter-cpp#v0.20.5",
     "tree-sitter-go": "git://github.com/tree-sitter/tree-sitter-go#05900fa",
     "tree-sitter-java": "0.21.0",
@@ -62,9 +64,10 @@
     "tree-sitter-python": "^0.20.2",
     "tree-sitter-rust": "^0.20.4",
     "tree-sitter-swift": "^0.3.6",
-    "tree-sitter-typescript": "git://github.com/tree-sitter/tree-sitter-typescript#v0.20.4",
-    "tree-sitter-zig": "git://github.com/GrayJack/tree-sitter-zig#8e970cb",
     "tree-sitter-toml": "0.5.1",
-    "@tree-sitter-grammars/tree-sitter-markdown": "0.2.3"
+    "tree-sitter-php": "^0.22.0",
+    "tree-sitter-bash": "^0.20.5",
+    "tree-sitter-typescript": "git://github.com/tree-sitter/tree-sitter-typescript#v0.20.4",
+    "tree-sitter-zig": "git://github.com/GrayJack/tree-sitter-zig#8e970cb"
   }
 }
