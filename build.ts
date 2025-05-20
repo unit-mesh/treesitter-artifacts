@@ -53,6 +53,7 @@ process.chdir(outDir);
 const grammars = Object.keys(packageInfo.dependencies)
 	.filter((n) => n.startsWith("tree-sitter-") && n !== "tree-sitter-cli")
 	.concat('@tree-sitter-grammars/tree-sitter-zig')
+	.concat('@derekstride/tree-sitter-sql')
 	.concat("@tlaplus/tree-sitter-tlaplus")
 	.filter((s) => !langArg || s.includes(langArg));
 

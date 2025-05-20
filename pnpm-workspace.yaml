@@ -1,4 +1,5 @@
 onlyBuiltDependencies:
+  - '@derekstride/tree-sitter-sql'
   - '@tlaplus/tree-sitter-tlaplus'
   - '@tree-sitter-grammars/tree-sitter-markdown'
   - '@tree-sitter-grammars/tree-sitter-zig'
