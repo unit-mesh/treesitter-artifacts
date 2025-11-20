@@ -5,7 +5,7 @@
     "/wasm"
   ],
   "main": "bindings/node",
-  "version": "1.7.4",
+  "version": "1.7.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/unit-mesh/treesitter-artifacts"
@@ -52,7 +52,6 @@
     "tree-sitter-toml": "0.5.1",
     "tree-sitter-php": "^0.22.0",
     "@derekstride/tree-sitter-sql": "0.3.8",
-    "tree-sitter-rescript": "github:rescript-lang/tree-sitter-rescript#6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a",
     "tree-sitter-bash": "^0.20.5",
     "tree-sitter-typescript": "github:tree-sitter/tree-sitter-typescript#v0.20.4",
     "tree-sitter-zig": "github:GrayJack/tree-sitter-zig#8e970cb",
