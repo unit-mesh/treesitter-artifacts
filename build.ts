@@ -66,7 +66,7 @@ PromisePool.withConcurrency(os.cpus().length)
 			await buildParserWASM(name, { subPath: "php" });
 		} else if (name == "tree-sitter-typescript") {
 			await buildParserWASM(name, { subPath: "typescript" });
-			await buildParserWASM(name, { subPath: "typescriptreact" });
+			await buildParserWASM(name, { subPath: "tsx" });
 		} else {
 			await buildParserWASM(name);
 		}

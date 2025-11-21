@@ -19,7 +19,7 @@ To make changes to Tree-sitter, you should have:
 
 1. install emcc
 
-```
+```bash
 brew install emscripten
 ```
 
