@@ -59,9 +59,6 @@ importers:
       tree-sitter-python:
         specifier: ^0.20.2
         version: 0.20.4
-      tree-sitter-rescript:
-        specifier: github:rescript-lang/tree-sitter-rescript#6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a
-        version: https://codeload.github.com/rescript-lang/tree-sitter-rescript/tar.gz/6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a
       tree-sitter-ruby:
         specifier: ^0.20.1
         version: 0.20.1
@@ -1188,10 +1185,6 @@ packages:
 
   tree-sitter-python@0.20.4:
     resolution: {integrity: sha512-F+94q/t9+4J5yaQnmfAqEf4OZFjuhuyniRtb9P2jPaBwHrbyJL44RKFALovZxhF0syLFKpTQ7ODywyiGeB1YMg==}
-
-  tree-sitter-rescript@https://codeload.github.com/rescript-lang/tree-sitter-rescript/tar.gz/6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a:
-    resolution: {tarball: https://codeload.github.com/rescript-lang/tree-sitter-rescript/tar.gz/6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a}
-    version: 1.2.0
 
   tree-sitter-ruby@0.20.1:
     resolution: {integrity: sha512-zS/bdIhLosi7NkjAXbkSxe1UwBB7r3osM9GseL+A1QLQJJmfZAESEWyvOU6Hg+pHB6w2GRghasvRNzgAiJlpng==}
@@ -2569,10 +2562,6 @@ snapshots:
       tree-sitter: 0.20.6
 
   tree-sitter-python@0.20.4:
-    dependencies:
-      nan: 2.22.2
-
-  tree-sitter-rescript@https://codeload.github.com/rescript-lang/tree-sitter-rescript/tar.gz/6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a:
     dependencies:
       nan: 2.22.2
 

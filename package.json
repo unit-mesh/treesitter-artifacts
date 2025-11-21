@@ -5,7 +5,7 @@
     "/wasm"
   ],
   "main": "bindings/node",
-  "version": "1.7.5",
+  "version": "1.7.6",
   "repository": {
     "type": "git",
     "url": "https://github.com/unit-mesh/treesitter-artifacts"
