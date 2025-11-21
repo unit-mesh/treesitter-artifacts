@@ -60,9 +60,7 @@ const grammars = Object.keys(packageInfo.dependencies)
 PromisePool.withConcurrency(os.cpus().length)
 	.for(grammars)
 	.process(async (name) => {
-		if (name == "tree-sitter-rescript") {
-			await buildParserWASM(name, { generate: true });
-		} else if (name == "tree-sitter-ocaml") {
+		if (name == "tree-sitter-ocaml") {
 			await buildParserWASM(name, { subPath: "ocaml" });
 		} else if (name == "tree-sitter-php") {
 			await buildParserWASM(name, { subPath: "php" });
